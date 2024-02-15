@@ -21,7 +21,7 @@ module.exports = {
     },
     colors: {
       body: '#e5e5e5',
-      white: '#fff',
+      white: '#ffffff',
       green: { DEFAULT: '#539592', hover: '#40807d' },
       black: { DEFAULT: '#273029', heavy: '#1b211c' },
       grey: '#888888',
