@@ -12,10 +12,10 @@ import { fadeIn } from "@/variants";
 
 const markers = [
   {
-    position: [34.052235, -118.243683],
-    title: "Location 1",
-    subtitle: "Lorem ipsum dolor sit amet.",
-    image: "/map/1.png",
+    position: [-6.828276, 111.81603],
+    title: "Lokasi",
+    subtitle: "Angkringan Cak Meri",
+    image: "/map/image.png",
   },
 ];
 
@@ -38,7 +38,7 @@ const Map = () => {
       id="contact"
     >
       <MapContainer
-        center={[34.052235, -118.243683]}
+        center={[-6.828276, 111.81603]}
         zoom={isMobile ? 10 : 12}
         className={`${isMobile ? "h-[300px]" : "h-[900px]"} z-10`}
         zoomControl={false}

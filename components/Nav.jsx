@@ -6,21 +6,25 @@ const links = [
     path: "home",
     name: "home",
     offset: -50,
+    href: ''
   },
   {
     path: "menu",
     name: "menu",
     offset: -50,
+    href: ''
   },
   {
     path: "about",
     name: "about",
     offset: -50,
+    href: ''
   },
   {
     path: "contact",
     name: "contact",
     offset: -50,
+    href: ''
   },
 ];
 

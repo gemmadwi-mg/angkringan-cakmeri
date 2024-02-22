@@ -8,24 +8,24 @@ import Image from "next/image";
 
 const menu = [
   {
-    img: "/menu/item-1.png",
-    title: "Tusukuan",
+    img: "/menu/tusukan/sosisbesar.png",
+    title: "Sosis Besar",
+    price: "Rp. 5000",
+  },
+  {
+    img: "/menu/tusukan/cikua.png",
+    title: "Cikua",
     price: "Rp. 2000",
   },
   {
-    img: "/menu/item-2.png",
-    title: "dagingan",
-    price: "Rp. 2000",
+    img: "/menu/nasi/nasibakarcumi.png",
+    title: "Nasi Bakar Cumi",
+    price: "Rp. 6000",
   },
   {
-    img: "/menu/item-3.png",
-    title: "gg",
-    price: "Rp. 2000",
-  },
-  {
-    img: "/menu/item-4.png",
-    title: "tt",
-    price: "Rp. 2000",
+    img: "/menu/minuman/estehjumbo.png",
+    title: "Es Teh Jumbo",
+    price: "Rp. 3000",
   },
 ];
 
@@ -42,7 +42,7 @@ const Menu = () => {
         >
           <h2 className="mb-3">Favorite Menu</h2>
           <Link
-            href="/"
+            href="/menu"
             className="text-green flex justify-center xl:justify-end items-center mb-16"
           >
             View all

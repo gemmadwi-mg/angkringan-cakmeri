@@ -3,11 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Nav from "./Nav";
 import { Button } from "./ui/button";
-import NavMobile from "./NavMobile";
+import NavMobileMenu from "./NavMobileMenu";
 
-const Header = () => {
+const HeaderMenu = () => {
   const [active, setActive] = useState(false);
 
   useEffect(() => {
@@ -37,21 +36,16 @@ const Header = () => {
           <Link href="/">
             <Image src="/logo.png" width={75} height={30} alt="" />
           </Link>
-          {/* nav */}
-          <Nav
-            containerStyles="hidden xl:flex gap-x-12 text-white"
-            linkStyles="capitalize"
-          />
-          <Link href="/menu">All Menu</Link>
+
+          <Link href="/">Home</Link>
           {/* btn */}
           <Link href="https://wa.link/a6mcxq">
             <Button variant="orange" size="sm">
               Pesan
             </Button>
           </Link>
-
           {/* mobile nav */}
-          <NavMobile
+          <NavMobileMenu
             containerStyles="xl:hidden"
             iconStyles="text-3xl"
             linkStyles="uppercase"
@@ -62,4 +56,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderMenu;

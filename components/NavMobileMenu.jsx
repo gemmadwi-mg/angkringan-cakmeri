@@ -6,7 +6,6 @@ import { IoCloseOutline } from "react-icons/io5";
 import { BiSolidFoodMenu } from "react-icons/bi";
 import { FaUsers, FaEnvelope } from "react-icons/fa";
 
-import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./ui/button";
@@ -38,7 +37,7 @@ const links = [
   },
 ];
 
-const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
+const NavMobileMenu = ({ containerStyles, iconStyles, linkStyles }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -68,23 +67,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             <Image src="/logo.svg" width={90} height={36} alt="" />
           </Link>
           {/* links */}
-          <div className="flex flex-col gap-y-8">
-            {links.map((link, index) => {
-              return (
-                <ScrollLink
-                  key={index}
-                  to={link.path}
-                  offset={link.offset}
-                  smooth={false}
-                  className="flex items-center gap-x-3"
-                >
-                  <div className={`${iconStyles}`}>{link.icon}</div>
-                  <div className={`${linkStyles}`}>{link.name}</div>
-                </ScrollLink>
-              );
-            })}
-          </div>
-          <Link href="/menu">All Menu</Link>
+          <Link href="/">Home</Link>
           {/* btn */}
           <Link href="https://wa.link/a6mcxq">
             <Button variant="orange" size="sm">
@@ -97,4 +80,4 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
   );
 };
 
-export default NavMobile;
+export default NavMobileMenu;

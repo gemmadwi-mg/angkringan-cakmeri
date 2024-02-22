@@ -23,7 +23,7 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.4 }}
               className="text-white mb-7"
             >
-              A taste of local <br /> flavours
+              Cita Rasa Lokal <br />  di Angkringan Cak Meri!
             </motion.h1>
             <motion.p
               variants={fadeIn("down", 0.4)}
@@ -41,8 +41,8 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.4 }}
               className="text-white mb-12 mx-w-lg mx-auto xl:max-w-none xl:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic porro
-              veritatis assumenda voluptatibus ipsum ex.
+              Nikmati Kelezatan di Angkringan Cak Meri untuk menikmati hidangan lezat yang ditawarkan di Angkringan Cak
+              Meri, menjanjikan pengalaman kuliner yang memuaskan.
             </motion.p>
             <motion.div
               variants={fadeIn("down", 0.8)}
@@ -61,7 +61,7 @@ const Hero = () => {
             viewport={{ once: false, amount: 0.1 }}
             className="hidden xl:flex xl:absolute xl:top-[200px] xl:right-0"
           >
-            <Image src="/hero/plate.png" width={756} height={682} alt="" />
+            <Image src="/hero/angkringan.png" width={756} height={682} alt="" />
           </motion.div>
         </div>
       </div>
